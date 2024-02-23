@@ -1,4 +1,4 @@
-package com.rendy.hammering.util;
+package com.rendy.hammering.hammers;
 
 import com.rendy.hammering.Hammering;
 import net.minecraft.world.item.Item;

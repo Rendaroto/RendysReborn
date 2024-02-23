@@ -1,7 +1,6 @@
 package com.rendy.hammering.events;
 
-import com.rendy.hammering.Hammering;
-import com.rendy.hammering.util.HammerItem;
+import com.rendy.hammering.hammers.HammerItem;
 import net.neoforged.fml.common.Mod;
 
 import net.minecraft.core.BlockPos;
@@ -15,24 +14,17 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
-import net.neoforged.neoforge.network.PacketDistributor;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.rendy.hammering.Tags.CAN_HAMMER;
-import static com.rendy.hammering.Tags.CAN_SHOVEL;
-
-@Mod(Hammering.MOD_ID)
 @Mod.EventBusSubscriber
 public class HammerEvents {
     @SubscribeEvent
@@ -61,7 +53,7 @@ public class HammerEvents {
 
     private static boolean isBestTool(final BlockState target, final LevelAccessor level, final BlockPos pos, final ItemStack stack, final Player player)
     {
-        if ((stack.getItem() instanceof HammerItem && target.is(CAN_HAMMER)))
+        if ((stack.getItem() instanceof HammerItem))
         {
             return true;
         }
