@@ -41,7 +41,7 @@ public class HammerEvents {
                 for (BlockPos pos : getAffectedPos(event.getPlayer()))
                 {
                     final BlockState state = level.getBlockState(pos);
-                    if (hardness * 2 >= state.getDestroySpeed(level, pos) && isBestTool(state, level, pos, item, event.getPlayer()))
+                    if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer()))
                     {
                         state.getBlock().playerDestroy(level, event.getPlayer(), pos, state, level.getBlockEntity(pos), mainHand);
                         level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());

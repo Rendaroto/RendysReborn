@@ -29,6 +29,6 @@ public class HammerItem extends PickaxeItem {
 
     @Override
     public boolean canPerformAction(ItemStack stack, ToolAction toolAction) {
-        return toolAction == ToolActions.PICKAXE_DIG;
+        return (toolAction == ToolActions.PICKAXE_DIG) || (toolAction == ToolActions.SHOVEL_DIG);
     }
 }
