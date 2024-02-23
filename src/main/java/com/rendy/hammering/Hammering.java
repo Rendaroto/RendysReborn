@@ -26,7 +26,7 @@ public class Hammering
     public static final DeferredRegister<CreativeModeTab> TAB_REG       = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MOD_ID);
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> VANILLA_PLUS_TAB = TAB_REG.register(MOD_ID, () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 1).withTabsBefore(
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> HAMMERING_TAB = TAB_REG.register(MOD_ID, () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 1).withTabsBefore(
             CreativeModeTabs.SEARCH).icon(() -> new ItemStack(HammerInit.NETHERITE_HAMMER.get())).displayItems((config, builder) -> {
         builder.accept(HammerInit.WOODEN_HAMMER.get());
         builder.accept(HammerInit.STONE_HAMMER.get());
@@ -42,13 +42,12 @@ public class Hammering
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         LOGGER.info("KTM");
-        LOGGER.info(modEventBus.toString());
+        //LOGGER.info(modEventBus.toString());
 
         Mod.EventBusSubscriber.Bus.FORGE.bus().get().register(HammerEvents.class);
-        Mod.EventBusSubscriber.Bus.MOD.bus().get().register(Hammering.class);
 
         HammerInit.HAMMER_ITEMS.register(modEventBus);
-        NeoForge.EVENT_BUS.register(this);
+        //NeoForge.EVENT_BUS.register(this);
         TAB_REG.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -57,13 +56,6 @@ public class Hammering
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         LOGGER.info("HAMMERING COMMON SETUP");
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-        // Do something when the server starts
-        LOGGER.info("Hammering mod started");
     }
 
 }
