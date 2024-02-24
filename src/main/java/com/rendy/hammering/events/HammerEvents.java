@@ -1,6 +1,6 @@
 package com.rendy.hammering.events;
 
-import com.rendy.hammering.hammers.HammerItem;
+import com.rendy.hammering.items.HammerItem;
 import net.neoforged.fml.common.Mod;
 
 import net.minecraft.core.BlockPos;
@@ -38,14 +38,29 @@ public class HammerEvents {
                 final ItemStack mainHand = event.getPlayer().getMainHandItem();
                 final Level level = event.getPlayer().getCommandSenderWorld();
                 final double hardness = event.getState().getDestroySpeed(level, event.getPos());
-                for (BlockPos pos : getAffectedPos(event.getPlayer()))
-                {
-                    final BlockState state = level.getBlockState(pos);
-                    if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer()))
+                if(!event.getPlayer().isShiftKeyDown())
+                    for (BlockPos pos : getAffectedPos(event.getPlayer()))
                     {
-                        state.getBlock().playerDestroy(level, event.getPlayer(), pos, state, level.getBlockEntity(pos), mainHand);
-                        level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+                        final BlockState state = level.getBlockState(pos);
+                        if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer()))
+                        {
+                            state.getBlock().playerDestroy(level, event.getPlayer(), pos, state, level.getBlockEntity(pos), mainHand);
+                            level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+                        }
                     }
+                else{
+
+                    Player player = event.getPlayer();
+
+                    final HitResult rayTrace = rayTrace(player.level(), player, ClipContext.Fluid.NONE);
+                    final BlockHitResult rayTraceResult = (BlockHitResult) rayTrace;
+                    final BlockPos center = rayTraceResult.getBlockPos();
+
+                    BlockState state = level.getBlockState(center);
+
+                    state.getBlock().playerDestroy(level, event.getPlayer(), center, state, level.getBlockEntity(center), mainHand);
+                    level.setBlockAndUpdate(center, Blocks.AIR.defaultBlockState());
+
                 }
             }
         }
