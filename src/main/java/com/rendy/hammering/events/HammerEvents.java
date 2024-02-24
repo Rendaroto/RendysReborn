@@ -38,16 +38,20 @@ public class HammerEvents {
                 final ItemStack mainHand = event.getPlayer().getMainHandItem();
                 final Level level = event.getPlayer().getCommandSenderWorld();
                 final double hardness = event.getState().getDestroySpeed(level, event.getPos());
-                if(!event.getPlayer().isShiftKeyDown())
-                    for (BlockPos pos : getAffectedPos(event.getPlayer()))
-                    {
+                if(!event.getPlayer().isShiftKeyDown()) {
+                    for (BlockPos pos : getAffectedPos(event.getPlayer())) {
                         final BlockState state = level.getBlockState(pos);
-                        if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer()))
-                        {
-                            state.getBlock().playerDestroy(level, event.getPlayer(), pos, state, level.getBlockEntity(pos), mainHand);
-                            level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+                        if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer())) {
+
+                            if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer())) {
+
+                                state.getBlock().playerDestroy(level, event.getPlayer(), pos, state, level.getBlockEntity(pos), mainHand);
+                                level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+
+                            }
                         }
                     }
+                }
                 else{
 
                     Player player = event.getPlayer();

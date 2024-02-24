@@ -33,5 +33,6 @@
   "item.hammering.reinforced_netherite": "Reinforced Netherite Ingot",
   "item.hammering.super_netherite": "Super Netherite Ingot",
   "item.hammering.netherstar_dust": "Netherite Dust",
-  "itemGroup.hammering" : "Rendys Tab"
+  "itemGroup.hammering" : "Rendys Tab",
+  "item.hammering.netherite_hammer": "Netherite Hammer"
 }
