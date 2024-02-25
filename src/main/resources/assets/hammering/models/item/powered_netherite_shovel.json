@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "hammering:item/powered_netherite_shovel"
+  }
+}
