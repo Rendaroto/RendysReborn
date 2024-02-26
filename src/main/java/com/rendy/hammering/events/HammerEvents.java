@@ -3,6 +3,8 @@ package com.rendy.hammering.events;
 import com.mojang.logging.LogUtils;
 import com.rendy.hammering.Hammering;
 import com.rendy.hammering.items.HammerItem;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.ShovelItem;
 import net.neoforged.fml.common.Mod;
 
 import net.minecraft.core.BlockPos;
@@ -71,7 +73,8 @@ public class HammerEvents {
 
     private static boolean isBestTool(final BlockState target, final LevelAccessor level, final BlockPos pos, final ItemStack stack, final Player player)
     {
-        if (stack.getItem() instanceof HammerItem && stack.isCorrectToolForDrops(target))
+
+        if (stack.getItem() instanceof HammerItem && (stack.isCorrectToolForDrops(target) || target.getTags().toList().contains(BlockTags.MINEABLE_WITH_SHOVEL)))
         {
             return true;
         }

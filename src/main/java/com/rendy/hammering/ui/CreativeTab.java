@@ -52,6 +52,9 @@ public class CreativeTab {
         builder.accept(ItemInit.POWERED_NETHERITE_INGOT.get());
         builder.accept(ItemInit.REINFORCED_NETHERITE_INGOT.get());
         builder.accept(ItemInit.SUPER_NETHERITE_INGOT.get());
+        builder.accept(ItemInit.POWERED_NETHERITE_TEMPLATE.get());
+        builder.accept(ItemInit.REINFORCED_NETHERITE_TEMPLATE.get());
+        builder.accept(ItemInit.SUPER_NETHERITE_TEMPLATE.get());
     }).build());
 
 }
