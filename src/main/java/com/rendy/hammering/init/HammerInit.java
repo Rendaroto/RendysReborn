@@ -30,18 +30,18 @@ public class HammerInit {
                     null));
 
     public static final DeferredItem<HammerItem> EMERALD_HAMMER = HAMMER_ITEMS.register  ("emerald_hammer",
-            () -> new HammerItem(CustomMaterialsInit.EMERALD_MATERIAL,1,-2.8f,
+            () -> new HammerItem(TiersInit.EMERALD_TIER,1,-2.8f,
                     null));
 
     public static final DeferredItem<HammerItem> POWERED_NETHERITE_HAMMER = HAMMER_ITEMS.register  ("powered_netherite_hammer",
-            () -> new HammerItem(CustomMaterialsInit.POWERED_NETHERITE_MATERIAL,1,-2.8f,
+            () -> new HammerItem(TiersInit.POWERED_NETHERITE_TIER,1,-2.8f,
                     null));
 
     public static final DeferredItem<HammerItem> REINFORCED_NETHERITE_HAMMER = HAMMER_ITEMS.register  ("reinforced_netherite_hammer",
-            () -> new HammerItem(CustomMaterialsInit.REINFORCED_NETHERITE_MATERIAL,1,-2.8f,
+            () -> new HammerItem(TiersInit.REINFORCED_NETHERITE_TIER,1,-2.8f,
                     null));
 
     public static final DeferredItem<HammerItem> SUPER_NETHERITE_HAMMER = HAMMER_ITEMS.register  ("super_netherite_hammer",
-            () -> new HammerItem(CustomMaterialsInit.SUPER_NETHERITE_MATERIAL,1,-2.8f,
+            () -> new HammerItem(TiersInit.SUPER_NETHERITE_TIER,1,-2.8f,
                     null));
 }

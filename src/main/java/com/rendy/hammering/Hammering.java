@@ -23,7 +23,7 @@ public class Hammering
         //INIZIO LOG
         LOGGER.info("Inizio loading");
 
-        modEventBus.register(HammerEvents.class);
+        NeoForge.EVENT_BUS.register(HammerEvents.class);
 
         //ITEMS
         ItemInit.ITEMS.register(modEventBus);

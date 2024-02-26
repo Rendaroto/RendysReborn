@@ -1,5 +1,7 @@
 package com.rendy.hammering.events;
 
+import com.mojang.logging.LogUtils;
+import com.rendy.hammering.Hammering;
 import com.rendy.hammering.items.HammerItem;
 import net.neoforged.fml.common.Mod;
 
@@ -18,15 +20,18 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Mod.EventBusSubscriber
 public class HammerEvents {
+
+    private static final Logger LOGGER = LogUtils.getLogger();
+
     @SubscribeEvent
     public static void onBlockBreak(@NotNull final BlockEvent.BreakEvent event)
     {
@@ -41,30 +46,24 @@ public class HammerEvents {
                 if(!event.getPlayer().isShiftKeyDown()) {
                     for (BlockPos pos : getAffectedPos(event.getPlayer())) {
                         final BlockState state = level.getBlockState(pos);
-                        if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer())) {
-
-                            if (isBestTool(state, level, pos, item, event.getPlayer()) && state.canHarvestBlock(level, pos, event.getPlayer())) {
-
-                                state.getBlock().playerDestroy(level, event.getPlayer(), pos, state, level.getBlockEntity(pos), mainHand);
-                                level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
-
-                            }
+                        if (hardness * 2 >= state.getDestroySpeed(level, pos) && isBestTool(state, level, pos, item, event.getPlayer()) && state.getDestroySpeed(level, pos) >= 0f) {
+                            state.getBlock().playerDestroy(level, event.getPlayer(), pos, state, level.getBlockEntity(pos), mainHand);
+                            level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
                         }
                     }
                 }
                 else{
 
-                    Player player = event.getPlayer();
-
-                    final HitResult rayTrace = rayTrace(player.level(), player, ClipContext.Fluid.NONE);
+                    final HitResult rayTrace = rayTrace(event.getPlayer().level(), event.getPlayer(), ClipContext.Fluid.NONE);
                     final BlockHitResult rayTraceResult = (BlockHitResult) rayTrace;
                     final BlockPos center = rayTraceResult.getBlockPos();
 
-                    BlockState state = level.getBlockState(center);
+                    final BlockState state = level.getBlockState(center);
 
-                    state.getBlock().playerDestroy(level, event.getPlayer(), center, state, level.getBlockEntity(center), mainHand);
-                    level.setBlockAndUpdate(center, Blocks.AIR.defaultBlockState());
-
+                    if (hardness * 2 >= state.getDestroySpeed(level, center) && isBestTool(state, level, center, item, event.getPlayer()) && state.getDestroySpeed(level, center) >= 0f) {
+                        state.getBlock().playerDestroy(level, event.getPlayer(), center, state, level.getBlockEntity(center), mainHand);
+                        level.setBlockAndUpdate(center, Blocks.AIR.defaultBlockState());
+                    }
                 }
             }
         }
@@ -72,7 +71,7 @@ public class HammerEvents {
 
     private static boolean isBestTool(final BlockState target, final LevelAccessor level, final BlockPos pos, final ItemStack stack, final Player player)
     {
-        if ((stack.getItem() instanceof HammerItem))
+        if (stack.getItem() instanceof HammerItem && stack.isCorrectToolForDrops(target))
         {
             return true;
         }
@@ -154,27 +153,5 @@ public class HammerEvents {
         }
 
         return list;
-    }
-
-    /**
-     * The break speed.
-     *
-     * @param event the event.
-     */
-    @SubscribeEvent
-    public static void breakSpeed(@NotNull final PlayerEvent.BreakSpeed event)
-    {
-        final ItemStack item = event.getEntity().getItemInHand(InteractionHand.MAIN_HAND);
-        if (event.getPosition().isPresent() && (item.getItem() instanceof HammerItem))
-        {
-            final Player player = event.getEntity();
-            final Level level = player.getCommandSenderWorld();
-            final BlockPos vector = event.getPosition().get().subtract(player.blockPosition());
-            final Direction facing = Direction.getNearest(vector.getX(), vector.getY(), vector.getZ()).getOpposite();
-            for (BlockPos pos : getAffectedPos(player))
-            {
-                final BlockState theBlock = level.getBlockState(pos);
-            }
-        }
     }
 }
