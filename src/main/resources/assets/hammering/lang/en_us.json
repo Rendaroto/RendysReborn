@@ -33,5 +33,8 @@
   "item.hammering.reinforced_netherite_ingot": "Reinforced Netherite Ingot",
   "item.hammering.super_netherite_ingot": "Super Netherite Ingot",
   "item.hammering.netherstar_dust": "Netherite Dust",
+  "item.hammering.powered_netherite_upgrade_smithing_template": "Powered Netherite Template",
+  "item.hammering.reinforced_netherite_upgrade_smithing_template": "Reinforced Netherite Template",
+  "item.hammering.super_netherite_upgrade_smithing_template": "Super Netherite Template",
   "itemGroup.hammering" : "Rendys Tab"
 }

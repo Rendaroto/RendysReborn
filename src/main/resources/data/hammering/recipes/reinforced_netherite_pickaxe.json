@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_trim",
+  "template": {
+    "item": "hammering:reinforced_netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "hammering:powered_netherite_pickaxe"
+  },
+  "addition": {
+    "item": "hammering:reinforced_netherite_ingot"
+  },
+  "result": {
+    "item": "hammering:reinforced_netherite_pickaxe"
+  }
+}

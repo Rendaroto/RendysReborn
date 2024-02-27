@@ -32,8 +32,6 @@ import java.util.List;
 @Mod.EventBusSubscriber
 public class HammerEvents {
 
-    private static final Logger LOGGER = LogUtils.getLogger();
-
     @SubscribeEvent
     public static void onBlockBreak(@NotNull final BlockEvent.BreakEvent event)
     {

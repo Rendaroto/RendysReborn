@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_trim",
+  "template": {
+    "item": "hammering:powered_netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "hammering:netherite_hammer"
+  },
+  "addition": {
+    "item": "hammering:powered_netherite_ingot"
+  },
+  "result": {
+    "item": "hammering:powered_netherite_hammer"
+  }
+}
