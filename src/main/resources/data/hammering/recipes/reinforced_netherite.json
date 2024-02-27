@@ -13,7 +13,7 @@
       "item": "minecraft:emerald_block"
     },
     "n": {
-      "item": "minecraft:powered_netherite_ingot"
+      "item": "hammering:powered_netherite_ingot"
     }
   },
   "result": {

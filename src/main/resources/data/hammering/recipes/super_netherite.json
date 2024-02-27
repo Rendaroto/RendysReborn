@@ -7,10 +7,10 @@
   ],
   "key": {
     "D": {
-      "item": "minecraft:hammering:netherstar_dust"
+      "item": "hammering:netherstar_dust"
     },
     "n": {
-      "item": "minecraft:reinforced_netherite_ingot"
+      "item": "hammering:reinforced_netherite_ingot"
     }
   },
   "result": {

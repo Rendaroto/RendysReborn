@@ -10,10 +10,10 @@
       "item": "minecraft:emerald_block"
     },
     "W": {
-      "item": "minecraft:emerald_shovel"
+      "item": "hammering:emerald_shovel"
     },
     "L": {
-      "item": "minecraft:emerald_pickaxe"
+      "item": "hammering:emerald_pickaxe"
     },
     "/": {
       "item": "minecraft:stick"
