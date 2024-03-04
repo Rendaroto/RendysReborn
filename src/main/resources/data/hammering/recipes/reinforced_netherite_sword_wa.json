@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hammering:reinforced_netherite_upgrade_smithing_template"
+        },
+        {
+            "item": "hammering:powered_netherite_sword"
+        },
+        {
+            "item": "hammering:reinforced_netherite_ingot"
+        }
+    ],
+    "result": {
+        "item": "hammering:reinforced_netherite_sword",
+        "count": 1
+    }
+}

@@ -1,7 +1,7 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "hammering:item/gold_hammer"
+    "layer0": "hammering:item/golden_hammer"
   },
   "display": {
     "thirdperson": {
