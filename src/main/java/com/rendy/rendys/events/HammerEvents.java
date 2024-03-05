@@ -2,6 +2,7 @@ package com.rendy.rendys.events;
 
 import com.rendy.rendys.items.HammerItem;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.PickaxeItem;
 import net.neoforged.fml.common.Mod;
 
 import net.minecraft.core.BlockPos;
@@ -67,7 +68,7 @@ public class HammerEvents {
     private static boolean isBestTool(final BlockState target, final LevelAccessor level, final BlockPos pos, final ItemStack stack, final Player player)
     {
 
-        if (stack.getItem() instanceof HammerItem && (stack.isCorrectToolForDrops(target) || target.getTags().toList().contains(BlockTags.MINEABLE_WITH_SHOVEL)))
+        if (stack.getItem() instanceof PickaxeItem && (stack.isCorrectToolForDrops(target) || target.getTags().toList().contains(BlockTags.MINEABLE_WITH_SHOVEL)))
         {
             return true;
         }

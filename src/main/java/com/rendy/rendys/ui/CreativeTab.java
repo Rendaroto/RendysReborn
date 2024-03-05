@@ -14,10 +14,10 @@ import static com.rendy.rendys.Rendys.MOD_ID;
 public class CreativeTab {
 
     public static final DeferredRegister<CreativeModeTab> TAB_REG = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,MOD_ID);
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> HAMMERING_TAB = TAB_REG.register("rendys_tab", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RENDYS_TAB = TAB_REG.register("rendys_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.rendys")) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> new ItemStack(HammerInit.NETHERITE_HAMMER.get())).displayItems((config, builder) -> {
+            .icon(() -> new ItemStack(ItemInit.NETHERSTAR_DUST.get())).displayItems((config, builder) -> {
         builder.accept(HammerInit.WOODEN_HAMMER.get());
         builder.accept(HammerInit.STONE_HAMMER.get());
         builder.accept(HammerInit.COPPER_HAMMER.get());

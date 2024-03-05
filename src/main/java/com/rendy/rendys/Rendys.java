@@ -3,16 +3,15 @@ package com.rendy.rendys;
 import com.mojang.logging.LogUtils;
 import com.rendy.rendys.events.HammerEvents;
 import com.rendy.rendys.init.item.*;
+import com.rendy.rendys.ui.CreativeTab;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
-import static com.rendy.rendys.ui.CreativeTab.TAB_REG;
-
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("rendys")
+@Mod(Rendys.MOD_ID)
 public class Rendys
 {
     public static final String MOD_ID = "rendys";
@@ -39,7 +38,7 @@ public class Rendys
         HammerInit.HAMMER_ITEMS.register(modEventBus);
 
         //CREATIVE_TAB
-        TAB_REG.register(modEventBus);
+        CreativeTab.TAB_REG.register(modEventBus);
 
         //LOG
         LOGGER.info("Fine loading");

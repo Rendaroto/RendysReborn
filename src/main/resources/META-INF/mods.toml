@@ -8,11 +8,11 @@ license="${mod_license}"
 [[mods]] #mandatory
 # The modid of the mod
 modId="rendys" #mandatory
-version="0.9" #mandatory
-displayName="Rendys" #mandatory
+version="1" #mandatory
+displayName="hammers" #mandatory
 authors="Rendy" #optional
 # The description text for the mod (multi line!) (#mandatory)
-description='''Adding Hammers. & More'''
+description='''Adding Hammers.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.${mod_id}]] #optional

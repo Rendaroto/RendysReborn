@@ -16,12 +16,8 @@ public class CustomMaterialsInit {
         public static Tier getCopperMaterial(){return COPPER_MATERIAL;}
         private static Tier getEmeraldMaterial() {return EMERALD_MATERIAL;}
         public static Tier getPoweredNetheriteMaterial() {return POWERED_NETHERITE_MATERIAL;}
-        public static Tier getReinforcedNetheriteMaterial() {
-                return REINFORCED_NETHERITE_MATERIAL;
-        }
-        public static Tier getSuperNetheriteMaterial() {
-                return SUPER_NETHERITE_MATERIAL;
-        }
+        public static Tier getReinforcedNetheriteMaterial() {return REINFORCED_NETHERITE_MATERIAL;}
+        public static Tier getSuperNetheriteMaterial() {return SUPER_NETHERITE_MATERIAL;}
 
         protected static final Tier COPPER_MATERIAL = TierSortingRegistry.registerTier(TiersInit.COPPER_TIER, new ResourceLocation("minecraft","copper"), List.of(Tiers.STONE), List.of(Tiers.IRON));
 
