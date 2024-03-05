@@ -48,6 +48,8 @@ public class CreativeTab {
         builder.accept(HoeInit.POWERED_NETHERITE_HOE.get());
         builder.accept(HoeInit.REINFORCED_NETHERITE_HOE.get());
         builder.accept(HoeInit.SUPER_NETHERITE_HOE.get());
+        builder.accept(ItemInit.POWERED_NETHERITE_DUST.get());
+        builder.accept(ItemInit.REINFORCED_NETHERITE_DUST.get());
         builder.accept(ItemInit.NETHERSTAR_DUST.get());
         builder.accept(ItemInit.POWERED_NETHERITE_INGOT.get());
         builder.accept(ItemInit.REINFORCED_NETHERITE_INGOT.get());
@@ -55,6 +57,12 @@ public class CreativeTab {
         builder.accept(ItemInit.POWERED_NETHERITE_TEMPLATE);
         builder.accept(ItemInit.REINFORCED_NETHERITE_TEMPLATE.get());
         builder.accept(ItemInit.SUPER_NETHERITE_TEMPLATE.get());
+        builder.accept(ItemInit.DIAMOND_APPLE.get());
+        builder.accept(ItemInit.EMERALD_APPLE.get());
+        builder.accept(ItemInit.NETHERITE_APPLE.get());
+        builder.accept(ItemInit.POWERED_NETHERITE_APPLE.get());
+        builder.accept(ItemInit.REINFORCED_NETHERITE_APPLE.get());
+        builder.accept(ItemInit.SUPER_NETHERITE_APPLE);
     }).build());
 
 }

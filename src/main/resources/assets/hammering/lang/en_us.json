@@ -32,9 +32,17 @@
   "item.hammering.powered_netherite_ingot": "Powered Netherite Ingot",
   "item.hammering.reinforced_netherite_ingot": "Reinforced Netherite Ingot",
   "item.hammering.super_netherite_ingot": "Super Netherite Ingot",
-  "item.hammering.netherstar_dust": "Netherite Dust",
+  "item.hammering.powered_netherstar_dust": "Powered Netherite Dust",
+  "item.hammering.reinforced_netherstar_dust": "Reinforced Netherite Dust",
+  "item.hammering.netherstar_dust": "Netherstar Dust",
   "item.hammering.powered_netherite_upgrade_smithing_template": "Powered Netherite Template",
   "item.hammering.reinforced_netherite_upgrade_smithing_template": "Reinforced Netherite Template",
   "item.hammering.super_netherite_upgrade_smithing_template": "Super Netherite Template",
+  "item.hammering.diamond_apple": "Diamond Apple",
+  "item.hammering.emerald_apple": "Emerald Apple",
+  "item.hammering.netherite_apple": "Netherite Apple",
+  "item.hammering.powered_netherite_apple": "Powered Netherite Apple",
+  "item.hammering.reinforced_netherite_apple": "Reinforced Netherite Apple",
+  "item.hammering.super_netherite_apple": "Super Netherite Apple",
   "itemGroup.hammering" : "Rendys Tab"
 }

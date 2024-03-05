@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hammering:powered_netherite_ingot"
+    }
+  ],
+  "result": {
+    "item": "hammering:powered_netherite_dust",
+    "count": 1
+  }
+}
