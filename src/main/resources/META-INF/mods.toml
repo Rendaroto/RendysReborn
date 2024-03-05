@@ -9,7 +9,7 @@ license="${mod_license}"
 # The modid of the mod
 modId="rendys" #mandatory
 version="1" #mandatory
-displayName="hammers" #mandatory
+displayName="Rendy's Reborn" #mandatory
 authors="Rendy" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''Adding Hammers.'''
