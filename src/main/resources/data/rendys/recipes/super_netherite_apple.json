@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rendys:reinforced_netherite_apple"
+    },
+    {
+      "item": "rendys:netherstar_dust"
+    }
+  ],
+  "result": {
+    "item": "rendys:super_netherite_apple",
+    "count": 1
+  }
+}

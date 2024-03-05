@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "rendys:powered_netherite_upgrade_smithing_template"
+        },
+        {
+            "item": "minecraft:netherite_axe"
+        },
+        {
+            "item": "rendys:powered_netherite_ingot"
+        }
+    ],
+    "result": {
+        "item": "rendys:powered_netherite_axe",
+        "count": 1
+    }
+}

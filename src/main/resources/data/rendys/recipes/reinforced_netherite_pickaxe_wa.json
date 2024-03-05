@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "rendys:reinforced_netherite_upgrade_smithing_template"
+        },
+        {
+            "item": "rendys:powered_netherite_pickaxe"
+        },
+        {
+            "item": "rendys:reinforced_netherite_ingot"
+        }
+    ],
+    "result": {
+        "item": "rendys:reinforced_netherite_pickaxe",
+        "count": 1
+    }
+}

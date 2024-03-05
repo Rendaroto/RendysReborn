@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "rendys:item/reinforced_netherite_shovel"
+  }
+}

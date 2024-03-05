@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#N#",
+        "NMN",
+        "#N#"
+    ],
+    "key": {
+        "#": {
+            "item": "rendys:netherstar_dust"
+        },
+        "N": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "M": {
+            "item": "rendys:reinforced_netherite_upgrade_smithing_template"
+        }
+    },
+    "result": {
+        "item": "rendys:super_netherite_upgrade_smithing_template",
+        "count": 1
+    }
+}

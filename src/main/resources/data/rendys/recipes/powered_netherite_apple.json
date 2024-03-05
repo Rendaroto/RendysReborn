@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rendys:netherite_apple"
+    },
+    {
+      "item": "rendys:powered_netherite_dust"
+    }
+  ],
+  "result": {
+    "item": "rendys:powered_netherite_apple",
+    "count": 1
+  }
+}

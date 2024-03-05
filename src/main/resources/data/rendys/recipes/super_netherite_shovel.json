@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_trim",
+  "template": {
+    "item": "rendys:super_netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "rendys:reinforced_netherite_shovel"
+  },
+  "addition": {
+    "item": "rendys:super_netherite_ingot"
+  },
+  "result": {
+    "item": "rendys:super_netherite_shovel"
+  }
+}

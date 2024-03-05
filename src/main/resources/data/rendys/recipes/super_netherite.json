@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "DnD",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "item": "rendys:netherstar_dust"
+    },
+    "n": {
+      "item": "rendys:reinforced_netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "rendys:super_netherite_ingot",
+    "count": 1
+  }
+}

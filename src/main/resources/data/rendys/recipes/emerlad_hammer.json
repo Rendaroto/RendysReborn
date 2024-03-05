@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#W#",
+    " L ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald_block"
+    },
+    "W": {
+      "item": "rendys:emerald_shovel"
+    },
+    "L": {
+      "item": "rendys:emerald_pickaxe"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "rendys:emerald_hammer",
+    "count": 1
+  }
+}

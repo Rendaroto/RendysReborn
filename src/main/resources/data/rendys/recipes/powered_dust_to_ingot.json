@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "rendys:powered_netherite_dust"
+  },
+  "result": "rendys:powered_netherite_ingot",
+  "cookingtime": 800
+}

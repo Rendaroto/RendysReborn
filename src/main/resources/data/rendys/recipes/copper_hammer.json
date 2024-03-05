@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#W#",
+    " L ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_block"
+    },
+    "W": {
+      "item": "rendys:copper_shovel"
+    },
+    "L": {
+      "item": "rendys:copper_pickaxe"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "rendys:copper_hammer",
+    "count": 1
+  }
+}

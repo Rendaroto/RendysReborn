@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#/#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "/": {
+      "item": "rendys:diamond_apple"
+    }
+  },
+  "result": {
+    "item": "rendys:emerald_apple",
+    "count": 1
+  }
+}

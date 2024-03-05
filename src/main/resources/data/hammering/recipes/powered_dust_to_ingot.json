@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "hammering:powered_netherite_dust"
-  },
-  "result": "hammering:powered_netherite_ingot",
-  "cookingtime": 800
-}

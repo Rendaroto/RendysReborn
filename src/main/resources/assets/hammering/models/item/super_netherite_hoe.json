@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "hammering:item/super_netherite_hoe"
-  }
-}
