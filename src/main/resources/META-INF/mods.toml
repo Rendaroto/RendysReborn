@@ -10,7 +10,7 @@ license="${mod_license}"
 modId="rendys" #mandatory
 version="1" #mandatory
 displayName="Rendy's Reborn" #mandatory
-authors="Rendy" #optional
+authors="Rendy, Doc.Prototipo" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''Adding Hammers.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
