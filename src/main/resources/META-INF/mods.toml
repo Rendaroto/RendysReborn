@@ -8,7 +8,7 @@ license="${mod_license}"
 [[mods]] #mandatory
 # The modid of the mod
 modId="rendys" #mandatory
-version="1" #mandatory
+version="1.0.0" #mandatory
 displayName="Rendy's Reborn" #mandatory
 authors="Rendy, Doc.Prototipo" #optional
 # The description text for the mod (multi line!) (#mandatory)
