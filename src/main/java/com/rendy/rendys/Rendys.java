@@ -1,6 +1,7 @@
 package com.rendy.rendys;
 
 import com.mojang.logging.LogUtils;
+import com.rendy.rendys.datagen.DataGenerators;
 import com.rendy.rendys.events.HammerEvents;
 import com.rendy.rendys.init.item.*;
 import com.rendy.rendys.ui.CreativeTab;

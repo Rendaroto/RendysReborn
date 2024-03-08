@@ -68,7 +68,27 @@ public class CreativeTab {
         builder.accept(ItemInit.NETHERITE_APPLE.get());
         builder.accept(ItemInit.POWERED_NETHERITE_APPLE.get());
         builder.accept(ItemInit.REINFORCED_NETHERITE_APPLE.get());
-        builder.accept(ItemInit.SUPER_NETHERITE_APPLE);
+        builder.accept(ItemInit.SUPER_NETHERITE_APPLE.get());
+        builder.accept(ItemInit.COPPER_HELMET.get());
+        builder.accept(ItemInit.COPPER_CHESTPLATE.get());
+        builder.accept(ItemInit.COPPER_LEGGINGS.get());
+        builder.accept(ItemInit.COPPER_BOOTS.get());
+        builder.accept(ItemInit.EMERALD_HELMET.get());
+        builder.accept(ItemInit.EMERALD_CHESTPLATE.get());
+        builder.accept(ItemInit.EMERALD_LEGGINGS.get());
+        builder.accept(ItemInit.EMERALD_BOOTS.get());
+        builder.accept(ItemInit.POWERED_NETHERITE_HELMET.get());
+        builder.accept(ItemInit.POWERED_NETHERITE_CHESTPLATE.get());
+        builder.accept(ItemInit.POWERED_NETHERITE_LEGGINGS.get());
+        builder.accept(ItemInit.POWERED_NETHERITE_BOOTS.get());
+        builder.accept(ItemInit.REINFORCED_NETHERITE_HELMET.get());
+        builder.accept(ItemInit.REINFORCED_NETHERITE_CHESTPLATE.get());
+        builder.accept(ItemInit.REINFORCED_NETHERITE_LEGGINGS.get());
+        builder.accept(ItemInit.REINFORCED_NETHERITE_BOOTS.get());
+        builder.accept(ItemInit.SUPER_NETHERITE_HELMET.get());
+        builder.accept(ItemInit.SUPER_NETHERITE_CHESTPLATE.get());
+        builder.accept(ItemInit.SUPER_NETHERITE_LEGGINGS.get());
+        builder.accept(ItemInit.SUPER_NETHERITE_BOOTS.get());
     }).build());
 
 }
