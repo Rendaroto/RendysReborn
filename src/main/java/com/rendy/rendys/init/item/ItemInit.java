@@ -3,13 +3,12 @@ package com.rendy.rendys.init.item;
 import com.rendy.rendys.Rendys;
 import com.rendy.rendys.init.ArmorMaterialInit;
 import com.rendy.rendys.init.FoodInit;
+import com.rendy.rendys.items.ArmorItemEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import static net.minecraft.world.item.Items.registerItem;
 
 public class ItemInit {
 
@@ -34,20 +33,20 @@ public class ItemInit {
     public static final DeferredItem<ArmorItem> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",() -> new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final DeferredItem<ArmorItem> COPPER_LEGGINGS = ITEMS.register("copper_leggings",() -> new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final DeferredItem<ArmorItem> COPPER_BOOTS = ITEMS.register("copper_boots",() -> new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> EMERALD_HELMET = ITEMS.register("emerald_helmet",() -> new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate",() -> new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings",() -> new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> EMERALD_BOOTS = ITEMS.register("emerald_boots",() -> new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.BOOTS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_HELMET = ITEMS.register("powered_netherite_helmet",() -> new ArmorItem(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_CHESTPLATE = ITEMS.register("powered_netherite_chestplate",() -> new ArmorItem(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_LEGGINGS = ITEMS.register("powered_netherite_leggings",() -> new ArmorItem(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_BOOTS = ITEMS.register("powered_netherite_boots",() -> new ArmorItem(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_HELMET = ITEMS.register("reinforced_netherite_helmet",() -> new ArmorItem(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_CHESTPLATE = ITEMS.register("reinforced_netherite_chestplate",() -> new ArmorItem(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_LEGGINGS = ITEMS.register("reinforced_netherite_leggings",() -> new ArmorItem(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_BOOTS = ITEMS.register("reinforced_netherite_boots",() -> new ArmorItem(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_HELMET = ITEMS.register("super_netherite_helmet",() -> new ArmorItem(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_CHESTPLATE = ITEMS.register("super_netherite_chestplate",() -> new ArmorItem(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_LEGGINGS = ITEMS.register("super_netherite_leggings",() -> new ArmorItem(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_BOOTS = ITEMS.register("super_netherite_boots",() -> new ArmorItem(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> EMERALD_HELMET = ITEMS.register("emerald_helmet",() -> new ArmorItemEffects(ArmorMaterialInit.EMERALD, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate",() -> new ArmorItemEffects(ArmorMaterialInit.EMERALD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings",() -> new ArmorItemEffects(ArmorMaterialInit.EMERALD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> EMERALD_BOOTS = ITEMS.register("emerald_boots",() -> new ArmorItemEffects(ArmorMaterialInit.EMERALD, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_HELMET = ITEMS.register("powered_netherite_helmet",() -> new ArmorItemEffects(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_CHESTPLATE = ITEMS.register("powered_netherite_chestplate",() -> new ArmorItemEffects(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_LEGGINGS = ITEMS.register("powered_netherite_leggings",() -> new ArmorItemEffects(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> POWERED_NETHERITE_BOOTS = ITEMS.register("powered_netherite_boots",() -> new ArmorItemEffects(ArmorMaterialInit.POWERED_NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_HELMET = ITEMS.register("reinforced_netherite_helmet",() -> new ArmorItemEffects(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_CHESTPLATE = ITEMS.register("reinforced_netherite_chestplate",() -> new ArmorItemEffects(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_LEGGINGS = ITEMS.register("reinforced_netherite_leggings",() -> new ArmorItemEffects(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> REINFORCED_NETHERITE_BOOTS = ITEMS.register("reinforced_netherite_boots",() -> new ArmorItemEffects(ArmorMaterialInit.REINFORCED_NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_HELMET = ITEMS.register("super_netherite_helmet",() -> new ArmorItemEffects(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_CHESTPLATE = ITEMS.register("super_netherite_chestplate",() -> new ArmorItemEffects(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_LEGGINGS = ITEMS.register("super_netherite_leggings",() -> new ArmorItemEffects(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> SUPER_NETHERITE_BOOTS = ITEMS.register("super_netherite_boots",() -> new ArmorItemEffects(ArmorMaterialInit.SUPER_NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 }
