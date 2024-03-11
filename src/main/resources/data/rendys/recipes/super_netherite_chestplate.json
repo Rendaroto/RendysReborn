@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "rendys:super_netherite_ingot"
+  },
+  "base": {
+    "item": "rendys:reinforced_netherite_chestplate"
+  },
+  "result": {
+    "item": "rendys:super_netherite_chestplate"
+  },
+  "template": {
+    "item": "rendys:super_netherite_upgrade_smithing_template"
+  }
+}

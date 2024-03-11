@@ -1,15 +1,15 @@
 {
-  "type": "minecraft:smithing_trim",
-  "template": {
-    "item": "rendys:powered_netherite_upgrade_smithing_template"
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "rendys:powered_netherite_ingot"
   },
   "base": {
     "item": "rendys:netherite_hammer"
   },
-  "addition": {
-    "item": "rendys:powered_netherite_ingot"
-  },
   "result": {
     "item": "rendys:powered_netherite_hammer"
+  },
+  "template": {
+    "item": "rendys:powered_netherite_upgrade_smithing_template"
   }
 }

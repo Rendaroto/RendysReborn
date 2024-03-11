@@ -4,12 +4,12 @@
     "item": "rendys:powered_netherite_upgrade_smithing_template"
   },
   "base": {
-    "item": "minecraft:netherite_pickaxe"
+    "item": "minecraft:netherite_boots"
   },
   "addition": {
     "item": "rendys:powered_netherite_ingot"
   },
   "result": {
-    "item": "rendys:powered_netherite_pickaxe"
+    "item": "rendys:powered_netherite_boots"
   }
 }

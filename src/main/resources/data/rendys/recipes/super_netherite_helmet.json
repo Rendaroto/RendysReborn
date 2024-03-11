@@ -4,12 +4,12 @@
     "item": "rendys:super_netherite_upgrade_smithing_template"
   },
   "base": {
-    "item": "rendys:reinforced_netherite_pickaxe"
+    "item": "rendys:reinforced_netherite_helmet"
   },
   "addition": {
     "item": "rendys:super_netherite_ingot"
   },
   "result": {
-    "item": "rendys:super_netherite_pickaxe"
+    "item": "rendys:super_netherite_helmet"
   }
 }
