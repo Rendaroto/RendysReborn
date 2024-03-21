@@ -52,5 +52,11 @@ public class TagGenerator extends ItemTagsProvider {
                         ItemInit.REINFORCED_NETHERITE_APPLE.get(),
                         ItemInit.SUPER_NETHERITE_APPLE.get()
                 );
+        this.tag(ItemTags.BEACON_PAYMENT_ITEMS)
+                .add(
+                        ItemInit.POWERED_NETHERITE_INGOT.get(),
+                        ItemInit.REINFORCED_NETHERITE_INGOT.get(),
+                        ItemInit.SUPER_NETHERITE_INGOT.get()
+                );
     }
 }
